@@ -1,0 +1,8 @@
+tasks:
+  - init: composer install
+    command: ./vendor/bin/phpunit
+
+vscode:
+  extensions:
+    - felixfbecker.php-debug
+    - bmewburn.vscode-intelephense-client
