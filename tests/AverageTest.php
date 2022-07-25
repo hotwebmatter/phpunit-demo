@@ -7,18 +7,18 @@ class AverageTest extends TestCase
 {
     protected $Average;
 
-    public function setUp()
+    public function setUp(): void 
     {
         $this->Average = new Average();
     }
 
-    public function testCalculationOfMean()
+    public function testCalculationOfMean(): void 
     {
         $numbers = [3, 7, 6, 1, 5];
         $this->assertEquals(4.4, $this->Average->mean($numbers));
     }
 
-    public function testCalculationOfMedian()
+    public function testCalculationOfMedian(): void 
     {
         $numbers = [3, 7, 6, 1, 5];
         $this->assertEquals(5, $this->Average->median($numbers));
